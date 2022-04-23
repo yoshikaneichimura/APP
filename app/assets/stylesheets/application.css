@@ -13,14 +13,18 @@
  *= require_tree .
  *= require_self
  */
-
-*{
+ * {
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-hesder{
+header,h1,nav,list-comment{
+  font-family:'Kaushan',cursive,sans-serif;
+}
+
+
+header{
   width:90%;
   padding:15px 0;
   margin:30px auto 0;
@@ -28,7 +32,7 @@ hesder{
   border-top:solid 5px #000000;
 }
 
- header.headline{
+header .headline{
   font-size:32px;
 }
 
@@ -65,24 +69,29 @@ main{
   width:200px;
   height:250px;
   margin:10px;
+  position:relative;
 }
 
 .list-comment{
   width:200;
-}
-  
-  
-  
-  
+  position:absolute;
+  left:0;
+  bottom:0;
 }
 
+.lisy-body{
+  display:block;
+  color:gray;
+  font-size:12px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
 
-
-
-
-
-
-
-
-
-
+.list-title{
+  display:block;
+  font-size:18px;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
